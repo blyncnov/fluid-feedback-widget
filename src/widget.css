@@ -19,7 +19,7 @@
 
 body {
   font-size: 15px;
-  background-color: #fff;
+  background-color: #fafafa;
   min-height: 100dvh;
   text-rendering: optimizeLegibility; /* Makes text rendering more legible */
   -webkit-font-smoothing: antialiased; /* For WebKit browsers (Chrome, Safari) */
