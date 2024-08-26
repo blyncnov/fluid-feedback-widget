@@ -1,7 +1,7 @@
 const FeedbackFormScreen = () => {
   return (
     <div>
-      <h2>Hi, Jeremytechie</h2>
+      <h2>Hola, 👋</h2>
     </div>
   );
 };

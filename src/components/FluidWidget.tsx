@@ -33,6 +33,7 @@ const FluidWidget = () => {
                 ? {
                     x: "-10%",
                     y: "-150%",
+                    padding: "3px",
                     width: "100%",
                     height: "100%",
                     borderRadius: "8px",
@@ -42,6 +43,7 @@ const FluidWidget = () => {
                 : {
                     x: 0,
                     y: 0,
+                    padding: 0,
                     width: "32px",
                     height: "32px",
                     borderRadius: "100%",
@@ -52,7 +54,7 @@ const FluidWidget = () => {
             className={cn("absolute -top-4 -z-10")}
           >
             <AnimatePresence>
-              {/* {showFeedbackWidget && <SendFeedbackScreen />} */}
+              {showFeedbackWidget && <SendFeedbackScreen />}
             </AnimatePresence>
           </motion.div>
         </div>
