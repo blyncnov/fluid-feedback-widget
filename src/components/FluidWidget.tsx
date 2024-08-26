@@ -31,12 +31,12 @@ const FluidWidget = () => {
             animate={
               showFeedbackWidget
                 ? {
-                    x: "-110%",
+                    x: "-10%",
                     y: "-150%",
                     width: "100%",
                     height: "100%",
                     borderRadius: "8px",
-                    backgroundColor: "transparent",
+                    backgroundColor: "black",
                     transition: { type: "spring", stiffness: 50, damping: 7 },
                   }
                 : {
@@ -52,7 +52,7 @@ const FluidWidget = () => {
             className={cn("absolute -top-4 -z-10")}
           >
             <AnimatePresence>
-              {showFeedbackWidget && <SendFeedbackScreen />}
+              {/* {showFeedbackWidget && <SendFeedbackScreen />} */}
             </AnimatePresence>
           </motion.div>
         </div>
