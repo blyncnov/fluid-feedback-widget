@@ -23,7 +23,7 @@ const FluidWidget = () => {
       >
         <div className="w-full flex justify-center items-center">
           <motion.div
-            drag
+            drag={showFeedbackWidget ? false : true}
             dragConstraints={
               !showFeedbackWidget && { left: 0, right: 0, top: 0, bottom: 0 }
             }
