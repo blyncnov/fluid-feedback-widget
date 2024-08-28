@@ -3,7 +3,7 @@ import FluidWidget from "./components/FluidWidget";
 
 function App() {
   return (
-    <main>
+    <main className="w-full">
       <FluidWidget />
     </main>
   );

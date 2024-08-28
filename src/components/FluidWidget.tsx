@@ -36,8 +36,12 @@ const FluidWidget = () => {
                     width: "320px",
                     height: "400px",
                     borderRadius: "8px",
-                    backgroundColor: "#000",
-                    transition: { type: "spring", stiffness: 50, damping: 10 },
+                    backgroundColor: "black",
+                    transition: {
+                      type: "spring",
+                      stiffness: 80,
+                      damping: 10,
+                    },
                   }
                 : {
                     x: 0,
@@ -45,7 +49,7 @@ const FluidWidget = () => {
                     width: "32px",
                     height: "32px",
                     borderRadius: "100%",
-                    backgroundColor: "#000",
+                    backgroundColor: "black",
                     transition: { type: "spring", stiffness: 500, damping: 10 },
                   }
             }

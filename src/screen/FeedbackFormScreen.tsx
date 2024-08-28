@@ -40,7 +40,7 @@ const FeedbackFormScreen = ({
   };
 
   return (
-    <section className="w-full h-full">
+    <section className="w-full">
       <div className="w-full flex flex-col gap-1">
         <h4 className="text-xl font-semibold text-tertiary">
           💭 Fluid Feedback Widget

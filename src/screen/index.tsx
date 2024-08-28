@@ -15,12 +15,10 @@ const SendFeedbackScreen = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { delay: -2 } }}
-      className="w-full relative rounded-lg text-black bg-white"
+      className="w-full relative rounded-[4px] text-black bg-white flex justify-center flex-col items-center py-3 px-4"
     >
-      <div className="w-full flex justify-center flex-col items-center py-3 px-4">
-        {!isSuccess && <FeedbackFormScreen setIsSuccess={setIsSuccess} />}
-        {isSuccess && <SuccessScreen />}
-      </div>
+      {!isSuccess && <FeedbackFormScreen setIsSuccess={setIsSuccess} />}
+      {isSuccess && <SuccessScreen />}
     </motion.div>
   );
 };
