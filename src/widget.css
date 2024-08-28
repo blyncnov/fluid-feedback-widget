@@ -17,13 +17,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 body {
   font-size: 15px;
-  background-color: #fafafa;
+  background-color: #ffffff;
   min-height: 100dvh;
   text-rendering: optimizeLegibility; /* Makes text rendering more legible */
   -webkit-font-smoothing: antialiased; /* For WebKit browsers (Chrome, Safari) */
   -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+}
+
+#widget_shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.364) 0px 4px 6px -2px;
 }
 
 @media (min-resolution: 192dpi) {

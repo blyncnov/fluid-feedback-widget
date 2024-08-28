@@ -37,6 +37,12 @@ To get started with the project, follow these steps:
    yarn install
    ```
 
+   or, if using Bun:
+
+   ```bash
+   bun install
+   ```
+
 3. **Start the development server:**
 
    ```bash
@@ -49,9 +55,15 @@ To get started with the project, follow these steps:
    yarn dev
    ```
 
+   or, if using Bun:
+
+   ```bash
+   bun run dev
+   ```
+
 ## Usage
 
-Once the development server is running, you can view the feedback widget by navigating to `http://localhost:3000` in your browser. The widget will display a button that triggers the feedback form with smooth animations when clicked.
+Once the development server is running, you can view the feedback widget by navigating to `http://localhost:5173` in your browser. The widget will display a button that triggers the feedback form with smooth animations when clicked.
 
 ## Project Structure
 

@@ -31,27 +31,26 @@ const FluidWidget = () => {
             animate={
               showFeedbackWidget
                 ? {
-                    x: "-10%",
-                    y: "-150%",
-                    padding: "3px",
-                    width: "100%",
-                    height: "100%",
+                    x: "-30%",
+                    y: "-58%",
+                    width: "320px",
+                    height: "400px",
                     borderRadius: "8px",
-                    backgroundColor: "black",
-                    transition: { type: "spring", stiffness: 50, damping: 7 },
+                    backgroundColor: "#000",
+                    transition: { type: "spring", stiffness: 50, damping: 10 },
                   }
                 : {
                     x: 0,
                     y: 0,
-                    padding: 0,
                     width: "32px",
                     height: "32px",
                     borderRadius: "100%",
-                    backgroundColor: "black",
+                    backgroundColor: "#000",
                     transition: { type: "spring", stiffness: 500, damping: 10 },
                   }
             }
-            className={cn("absolute -top-4 -z-10")}
+            id="widget_shadow"
+            className={cn("absolute -z-10 overflow-y-scroll no-scrollbar")}
           >
             <AnimatePresence>
               {showFeedbackWidget && <SendFeedbackScreen />}
